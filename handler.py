@@ -5,7 +5,7 @@ import requests
 import runpod
 
 # We only need the two endpoints you are using.
-IMAGE_EDIT_URL = "https://fal.run/fal-ai/z-image/turbo"
+IMAGE_EDIT_URL = "https://fal.run/fal-ai/z-image/turbo/image-to-image"
 VIDEO_GEN_URL = "https://fal.run/fal-ai/ltx-2-19b/image-to-video"
 
 def call_fal_api(job_input):
@@ -61,3 +61,4 @@ def handler(job):
         return {"error": str(e)}
 
 runpod.serverless.start({"handler": handler})
+
