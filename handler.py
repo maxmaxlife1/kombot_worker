@@ -7,7 +7,7 @@ import runpod
 # --- THIS IS THE FIX: The URL for z_image_turbo_edit is now correct ---
 MODEL_REGISTRY = {
     "z_image_turbo_edit": {
-        "url": "https://fal.run/fal-ai/z-image/turbo/image-to-image",
+        "url": "https://fal.run/fal-ai/bytedance/seedream/v4.5/edit",
         "type": "image-to-image",
         "image_key": "image_url"
     },
@@ -55,3 +55,4 @@ def handler(job):
         return {"error": str(e)}
 
 runpod.serverless.start({"handler": handler})
+
